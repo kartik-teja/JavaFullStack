@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Set a default font for the body */
+            margin: 20px; /* Add some margin around the body */
+        }
+        .container {
+            margin-bottom: 20px; /* Add space between containers */
+            border: 1px solid #ccc; /* Add a border to the container */
+            padding: 20px; /* Add padding inside the container */
+            border-radius: 5px; /* Rounded corners for the container */
+            background-color: #f9f9f9; /* Light background color */
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        .form-actions {
+            text-align: center;
+        }
+        .separator {
+            margin: 20px 0; /* Space above and below separator */
+            border-top: 1px solid #ccc; /* Horizontal line */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><textarea id="message" name="message" placeholder="Type your message here..." required></textarea></td>
+                </tr>
+            </table>
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="container">
+        <h2>Upload Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="files">Upload Files:</label></td>
+                    <td><input type="file" id="files" name="files" multiple required></td>
+                </tr>
+                <tr>
+                    <td><label for="description">Description:</label></td>
+                    <td><textarea id="description" name="description" placeholder="Describe your files..." required></textarea></td>
+                </tr>
+            </table>
+            <div class="form-actions">
+                <button type="submit">Upload</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
